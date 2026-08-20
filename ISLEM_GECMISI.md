@@ -1,5 +1,14 @@
 # İşlem Geçmişi - Murat İnşaat
 
+## [2026-08-20 15:13] - Git Deposu Kurulumu ve GitHub'a Push Edilmesi
+
+* **Model:** Antigravity
+* **Etkilenen Dosyalar:** `[YENİ]` `.gitignore`, `[GÜNCELLENDİ]` `SON_DURUM.md`
+* **Yapılan İşlem:** Proje için `.gitignore` oluşturuldu, Git deposu `main` dalı ile ilklendirildi ve tüm kaynak kodlar `[antigravity] feat: Murat Yapi & Hizmet modern frontend demo platformu` commit mesajıyla `https://github.com/asujai/muratin-aat.git` deposuna push edildi.
+* **Doğrulama:** `git push -u origin main` komutu başarıyla tamamlandı.
+* **Bilinen Sorunlar:** Yok
+* **Sonraki Öneri:** Netlify paneli üzerinden reponun seçilerek dağıtımın (deploy) tetiklenmesi.
+
 ## [2026-08-20 15:02] - Netlify Yapılandırması ve Müşteri Sunumunu Güçlendiren Özelliklerin Eklenmesi
 
 * **Model:** Antigravity
