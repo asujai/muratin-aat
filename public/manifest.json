@@ -1,0 +1,19 @@
+{
+  "short_name": "Murat Yapı",
+  "name": "Murat Yapı & Hizmet Platformu",
+  "description": "Ev ve iş yeriniz için boya, elektrik, su tesisatı, tadilat ve çatı hizmetleri platformu.",
+  "icons": [
+    {
+      "src": "/pwa-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#026fc7",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "tr-TR"
+}
