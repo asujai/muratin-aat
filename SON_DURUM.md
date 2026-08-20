@@ -1,15 +1,17 @@
 # Murat İnşaat / Murat Yapı & Hizmet - Son Durum
 
-* **Son Güncelleme:** 2026-08-20 15:13
+* **Son Güncelleme:** 2026-08-20 15:23
 * **Aktif Model:** Antigravity
-* **Mevcut Aşama:** GitHub'a Push Edildi & Netlify Dağıtımına Hazır
-* **Son Commit:** `[antigravity] feat: Murat Yapi & Hizmet modern frontend demo platformu` (`031b11a`)
+* **Mevcut Aşama:** Mobil Görünüm ve Akıcılık İyileştirmeleri Tamamlandı & Push Edildi
+* **Son Commit:** `[antigravity] fix: mobil gorunum, buton cakismalari ve responsive akicilik iyilestirmeleri` (`3c71ca8`)
 * **GitHub Deposu:** `https://github.com/asujai/muratin-aat.git` (Branch: `main`)
 * **Tamamlanan İşler:**
-  - Netlify SPA yönlendirme ve yapılandırma dosyaları (`public/_redirects`, `netlify.toml`) eklendi.
-  - 16 ana kategori, 70+ alt hizmet, 7 adımlı uçtan uca interaktif talep sihirbazı kodlandı.
-  - Önce / Sonra dönüşüm kaydırıcısı, Canlı Maliyet Hesaplayıcı, Live Toast bildirimleri, Müşteri Demo Revizyon Barı ve Mobil Alt Menü entegre edildi.
-  - Proje Git deposu ilklendirildi, commit oluşturuldu ve GitHub `main` dalına push edildi.
-* **Doğrulama:** GitHub push işlemi 0 hata ile tamamlandı.
+  - Akıllı Asistan kutusundaki "Uygun Hizmeti Bul" butonunun metin alanının üzerine binmesi (overlap) sorunu düzeltildi.
+  - Örnek soruların alt alta uzayarak ekranı doldurması yerine mobilde yatay kaydırılabilir (horizontal scroll) etiketlere dönüştürüldü.
+  - Mobil üst header'daki buton karmaşası sadeleştirildi (hızlı arama + menü ikonu).
+  - Hero alanı ve popüler kartlardaki mobil yazı boyutları, boşluklar ve dokunma alanları optimize edildi.
+  - Alt mobil gezinme çubuğu güvenli alan (safe-area) ve ergonomiyle güncellendi.
+  - Değişiklikler GitHub `main` dalına push edildi.
+* **Doğrulama:** `npm run build` hatasız tamamlandı, GitHub push başarılı.
 * **Bilinen Sorunlar:** Yok.
-* **Önerilen Sonraki Adım:** Netlify üzerinden `asujai/muratin-aat` reposunun bağlanarak canlı URL'nin alınması ve müşteriye sunulması.
+* **Önerilen Sonraki Adım:** Netlify üzerinden güncel halin incelenmesi.

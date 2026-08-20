@@ -1,5 +1,14 @@
 # İşlem Geçmişi - Murat İnşaat
 
+## [2026-08-20 15:23] - Mobil Responsive Düzenleme ve Buton Çakışmalarının Giderilmesi
+
+* **Model:** Antigravity
+* **Etkilenen Dosyalar:** `[GÜNCELLENDİ]` `src/components/home/SmartAssistant.tsx`, `src/components/layout/Navbar.tsx`, `src/components/home/HeroSection.tsx`, `src/components/home/PopularServices.tsx`, `src/components/layout/MobileBottomNav.tsx`, `src/components/home/DemoFeedbackBar.tsx`, `SON_DURUM.md`
+* **Yapılan İşlem:** Kullanıcının ilettiği mobil ekran görüntüsündeki buton-metin çakışmaları (Akıllı Asistan butonunun textarea metnini kapatması) düzeltildi. Örnek sorular mobilde yatay kaydırılabilir modern etiketlere dönüştürüldü. Üst menü ve hero bölümü mobil ergonomiye göre sadeleştirildi. Tüm değişiklikler GitHub deposuna push edildi.
+* **Doğrulama:** `npm run build` komutu 0 hata ile çalıştı. Git commit ve push `3c71ca8` hash'i ile başarıyla tamamlandı.
+* **Bilinen Sorunlar:** Yok
+* **Sonraki Öneri:** Netlify canlı önizleme bağlantısı üzerinden mobil testlerin yapılması.
+
 ## [2026-08-20 15:13] - Git Deposu Kurulumu ve GitHub'a Push Edilmesi
 
 * **Model:** Antigravity
