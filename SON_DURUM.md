@@ -1,15 +1,14 @@
 # Murat İnşaat / Murat Yapı & Hizmet - Son Durum
 
-* **Son Güncelleme:** 2026-08-20 15:40
+* **Son Güncelleme:** 2026-08-20 15:42
 * **Aktif Model:** Antigravity
-* **Mevcut Aşama:** Netlify Üzerinden Canlıda & Yerel Süreçler Kapatıldı
-* **Son Commit:** `[antigravity] fix: tam opak mobil menu, scroll lock ve hero rozet temizligi` (`3eec7e1`)
+* **Mevcut Aşama:** Tam PWA & Standalone Mobil Uygulama Entegrasyonu Tamamlandı
+* **Son Commit:** `[antigravity] feat: tam PWA destegi, manifest.json ve standalone mobil uygulama meta etiketleri eklendi` (`eb6c810`)
 * **GitHub Deposu:** `https://github.com/asujai/muratin-aat.git` (Branch: `main`)
 * **Tamamlanan İşler:**
-  - 16 ana kategori, 70+ alt hizmet, 7 adımlı uçtan uca interaktif talep sihirbazı tamamlandı.
-  - Mobil menü opaklığı, scroll lock, buton çakışmaları ve responsive düzenler çözüldü.
-  - Kodlar GitHub'a push edildi ve Netlify üzerinden canlı dağıtım başarıyla sağlandı.
-  - Yerel `npm run dev` ve localhost geliştirme süreçleri sonlandırıldı.
-* **Doğrulama:** Yerel arka plan görevleri durduruldu, Netlify yayını aktif.
+  - `manifest.json` (Web App Manifest), `pwa-icon.svg` (512x512 uygulama simgesi) ve iOS/Android standalone uygulama meta etiketleri eklendi.
+  - Artık telefon tarayıcısından "Ana Ekrana Ekle / Yükle" yapıldığında tarayıcı adres çubukları gizlenir, tam ekran yerel uygulama (standalone PWA) modunda açılır.
+  - Değişiklikler GitHub `main` dalına aktarıldı.
+* **Doğrulama:** `npm run build` hatasız tamamlandı, GitHub push başarılı.
 * **Bilinen Sorunlar:** Yok.
-* **Önerilen Sonraki Adım:** Müşteri incelemesi sonrasında gelecek revizyonlar doğrultusunda geliştirmeler veya backend entegrasyonu.
+* **Önerilen Sonraki Adım:** Müşteri geri bildirimleri doğrultusunda revizyonların yapılması.
