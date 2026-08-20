@@ -80,15 +80,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-tr from-brand-200/40 via-sky-100/30 to-transparent blur-3xl -z-10 pointer-events-none rounded-full" />
 
       <div className="max-w-5xl mx-auto px-3.5 sm:px-6 lg:px-8 text-center">
-        {/* Top Mini Pill */}
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-brand-200 shadow-soft-sm mb-4 sm:mb-6">
-          <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-          <span className="text-[11px] sm:text-xs font-bold text-slate-700">Trabzon & Karadeniz Hizmet Ağı</span>
-          <span className="text-[10px] sm:text-[11px] font-semibold text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full">
-            Ücretsiz Keşif
-          </span>
-        </div>
-
         {/* Main Headline */}
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.2] mb-3 sm:mb-5">
           Evinizde veya iş yerinizde <br className="hidden sm:inline" />
