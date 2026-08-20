@@ -1,5 +1,14 @@
 # İşlem Geçmişi - Murat İnşaat
 
+## [2026-08-20 15:40] - Yerel Geliştirme Süreçlerinin Kapatılması ve Netlify Canlı Geçişi
+
+* **Model:** Antigravity
+* **Etkilenen Dosyalar:** `[GÜNCELLENDİ]` `SON_DURUM.md`
+* **Yapılan İşlem:** Netlify üzerinden projenin canlıya alınması ve PWA "Ana Ekrana Ekle / Yükle" özelliğinin sorunsuz çalıştığının teyit edilmesi üzerine, yerel `localhost:5173` ve `npm run dev` arka plan süreçleri tamamen kapatıldı.
+* **Doğrulama:** `manage_task` ile tüm arka plan görevlerinin kapatıldığı doğrulandı.
+* **Bilinen Sorunlar:** Yok
+* **Sonraki Öneri:** Müşteri geri bildirimlerine göre arayüz veya backend geliştirmeleri.
+
 ## [2026-08-20 15:25] - Mobil Menü Saydamlık & Scroll Lock Düzeltmesi ve Hero Rozet Temizliği
 
 * **Model:** Antigravity

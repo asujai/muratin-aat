@@ -1,14 +1,15 @@
 # Murat İnşaat / Murat Yapı & Hizmet - Son Durum
 
-* **Son Güncelleme:** 2026-08-20 15:25
+* **Son Güncelleme:** 2026-08-20 15:40
 * **Aktif Model:** Antigravity
-* **Mevcut Aşama:** Mobil Menü Saydamlık & Scroll Lock Düzeltmesi Tamamlandı
+* **Mevcut Aşama:** Netlify Üzerinden Canlıda & Yerel Süreçler Kapatıldı
 * **Son Commit:** `[antigravity] fix: tam opak mobil menu, scroll lock ve hero rozet temizligi` (`3eec7e1`)
 * **GitHub Deposu:** `https://github.com/asujai/muratin-aat.git` (Branch: `main`)
 * **Tamamlanan İşler:**
-  - Mobil hamburger menü (3 çizgi) açıldığında arkadaki sayfanın görünmesi (saydamlık) ve arkadaki panelin kayması engellendi. Menü %100 opak tam ekran ve arkadaki kaydırmayı kilitleyen (`body.style.overflow = 'hidden'`) yerel uygulama modalına dönüştürüldü.
-  - Hero alanının en üstündeki *"Trabzon & Karadeniz Hizmet Ağı"* rozet kutusu kaldırıldı.
-  - Değişiklikler GitHub `main` dalına push edildi.
-* **Doğrulama:** `npm run build` hatasız tamamlandı, GitHub push başarılı.
+  - 16 ana kategori, 70+ alt hizmet, 7 adımlı uçtan uca interaktif talep sihirbazı tamamlandı.
+  - Mobil menü opaklığı, scroll lock, buton çakışmaları ve responsive düzenler çözüldü.
+  - Kodlar GitHub'a push edildi ve Netlify üzerinden canlı dağıtım başarıyla sağlandı.
+  - Yerel `npm run dev` ve localhost geliştirme süreçleri sonlandırıldı.
+* **Doğrulama:** Yerel arka plan görevleri durduruldu, Netlify yayını aktif.
 * **Bilinen Sorunlar:** Yok.
-* **Önerilen Sonraki Adım:** Netlify üzerinden güncel halin test edilmesi.
+* **Önerilen Sonraki Adım:** Müşteri incelemesi sonrasında gelecek revizyonlar doğrultusunda geliştirmeler veya backend entegrasyonu.
