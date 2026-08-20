@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Menu, X, Sparkles, Grid, ArrowRight } from 'lucide-react';
+import { Phone, Menu, X, Sparkles, Grid, ArrowRight, MessageSquare } from 'lucide-react';
 import { CATEGORIES } from '../../data/categories';
 import { Category } from '../../types/service';
 
@@ -12,7 +12,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({
   onOpenWizard,
   onOpenAllCategories,
-  onNavigateSection
+  onNavigateSection,
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,7 +20,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 15);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -36,30 +36,32 @@ export const Navbar: React.FC<NavbarProps> = ({
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 py-3'
-          : 'bg-white/90 backdrop-blur-sm border-b border-slate-100/60 py-4'
+          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 py-2.5 sm:py-3'
+          : 'bg-white/90 backdrop-blur-sm border-b border-slate-100/60 py-3 sm:py-4'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Brand Logo */}
           <div
             onClick={() => handleNavClick('hero')}
-            className="flex items-center gap-3 cursor-pointer group select-none"
+            className="flex items-center gap-2 sm:gap-3 cursor-pointer group select-none"
           >
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform duration-200">
-              <span className="font-extrabold text-xl tracking-tighter">M</span>
+            <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center text-white shadow-sm shadow-brand-500/20 group-hover:scale-105 transition-transform duration-200 shrink-0">
+              <span className="font-extrabold text-lg sm:text-xl tracking-tighter">M</span>
             </div>
             <div>
-              <div className="flex items-center gap-1.5">
-                <span className="font-extrabold text-xl text-slate-900 tracking-tight group-hover:text-brand-600 transition-colors">
-                  MURAT<span className="text-brand-600 font-bold ml-1">YAPI</span>
+              <div className="flex items-center gap-1">
+                <span className="font-black text-lg sm:text-xl text-slate-900 tracking-tight leading-none">
+                  MURAT<span className="text-brand-600 ml-0.5">YAPI</span>
                 </span>
-                <span className="text-[10px] uppercase font-bold tracking-widest px-1.5 py-0.5 bg-brand-50 text-brand-700 border border-brand-200 rounded">
+                <span className="hidden sm:inline-block text-[10px] uppercase font-bold tracking-widest px-1.5 py-0.5 bg-brand-50 text-brand-700 border border-brand-200 rounded ml-1">
                   Hizmet
                 </span>
               </div>
-              <p className="text-[11px] text-slate-500 font-medium">Usta & Tadilat Platformu</p>
+              <p className="text-[10px] sm:text-[11px] text-slate-500 font-medium leading-none mt-0.5">
+                Usta & Hizmet Platformu
+              </p>
             </div>
           </div>
 
@@ -142,8 +144,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
           </nav>
 
-          {/* Action CTAs */}
-          <div className="hidden sm:flex items-center gap-3">
+          {/* Action CTAs (Desktop) */}
+          <div className="hidden lg:flex items-center gap-3">
             <a
               href="tel:08503080000"
               className="flex items-center gap-2 px-3 py-2 text-xs font-semibold text-slate-700 hover:text-brand-600 hover:bg-slate-50 rounded-xl transition-colors"
@@ -166,20 +168,22 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex sm:hidden items-center gap-2">
-            <button
-              onClick={() => onOpenWizard()}
-              className="px-3 py-1.5 rounded-lg bg-brand-600 text-white font-bold text-xs shadow-sm"
+          {/* Mobile Right Bar: Clean Phone Call + Menu Button */}
+          <div className="flex lg:hidden items-center gap-2">
+            <a
+              href="tel:08503080000"
+              className="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-200 flex items-center justify-center text-sm shadow-sm active:scale-95"
+              title="Ara"
             >
-              Talep Oluştur
-            </button>
+              <Phone className="w-4 h-4" />
+            </a>
+
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-slate-600 hover:bg-slate-100"
+              className="w-9 h-9 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center hover:bg-slate-200 active:scale-95 transition-colors"
               aria-label="Menüyü aç"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
@@ -187,7 +191,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[65px] bg-white border-b border-slate-200 shadow-xl max-h-[85vh] overflow-y-auto p-5 animate-slide-up z-50">
+        <div className="lg:hidden fixed inset-x-0 top-[57px] bg-white/98 backdrop-blur-lg border-b border-slate-200 shadow-2xl max-h-[85vh] overflow-y-auto p-4 animate-slide-up z-50">
           <div className="space-y-3">
             <div className="p-3 bg-brand-50 rounded-xl border border-brand-100 flex items-center justify-between">
               <div>
@@ -199,14 +203,14 @@ export const Navbar: React.FC<NavbarProps> = ({
                   setMobileMenuOpen(false);
                   onOpenWizard();
                 }}
-                className="px-3 py-1.5 bg-brand-600 text-white font-bold text-xs rounded-lg shadow-sm"
+                className="px-3.5 py-1.5 bg-brand-600 text-white font-bold text-xs rounded-lg shadow-sm"
               >
-                Başla
+                Talep Aç
               </button>
             </div>
 
             <div className="border-t border-slate-100 pt-3">
-              <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Sayfalar</p>
+              <p className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Sayfa Menüsü</p>
               <div className="grid grid-cols-1 gap-1">
                 <button
                   onClick={() => {
@@ -231,7 +235,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   onClick={() => handleNavClick('hakkimizda')}
                   className="w-full text-left px-3 py-2.5 rounded-lg font-semibold text-slate-800 hover:bg-slate-50 text-sm"
                 >
-                  Hakkımızda
+                  Hakkımızda & Güven
                 </button>
                 <button
                   onClick={() => handleNavClick('sss')}
@@ -243,7 +247,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   onClick={() => handleNavClick('iletisim')}
                   className="w-full text-left px-3 py-2.5 rounded-lg font-semibold text-slate-800 hover:bg-slate-50 text-sm"
                 >
-                  İletişim
+                  İletişim & Randevu
                 </button>
               </div>
             </div>
@@ -251,13 +255,13 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div className="border-t border-slate-100 pt-3 flex items-center justify-between">
               <a
                 href="tel:08503080000"
-                className="flex items-center gap-2 text-slate-800 font-bold text-sm"
+                className="flex items-center gap-2 text-slate-800 font-bold text-xs"
               >
                 <Phone className="w-4 h-4 text-brand-600" />
                 0850 308 00 00
               </a>
-              <span className="text-xs text-emerald-600 font-bold bg-emerald-50 px-2 py-0.5 rounded">
-                7/24 Aktif
+              <span className="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded">
+                7/24 Acil Servis
               </span>
             </div>
           </div>
