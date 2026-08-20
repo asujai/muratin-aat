@@ -1,5 +1,16 @@
 # İşlem Geçmişi - Murat İnşaat
 
+## [2026-08-20 15:25] - Mobil Menü Saydamlık & Scroll Lock Düzeltmesi ve Hero Rozet Temizliği
+
+* **Model:** Antigravity
+* **Etkilenen Dosyalar:** `[GÜNCELLENDİ]` `src/components/layout/Navbar.tsx`, `src/components/home/HeroSection.tsx`, `SON_DURUM.md`
+* **Yapılan İşlem:** 
+  1. Sağ üstteki 3 çizgili mobil menü açıldığında arkadaki sayfanın görünmesi (saydamlık) ve arkadaki sayfanın hareket etmesi (scroll) sorunu düzeltildi. Menü %100 opak (solid beyaz zeminli) tam ekran bir drawer'a çevrildi ve menü açıkken arka plan kaydırması kilitlendi (`body.style.overflow = 'hidden'`).
+  2. Hero bölümünün en üstündeki *"Trabzon & Karadeniz Hizmet Ağı"* mini rozeti tamamen kaldırıldı.
+* **Doğrulama:** `npm run build` komutu 0 hata ile çalıştı. Git commit ve push `3eec7e1` hash'i ile GitHub'a aktarıldı.
+* **Bilinen Sorunlar:** Yok
+* **Sonraki Öneri:** Netlify üzerinden güncel arayüzün incelenmesi.
+
 ## [2026-08-20 15:23] - Mobil Responsive Düzenleme ve Buton Çakışmalarının Giderilmesi
 
 * **Model:** Antigravity
