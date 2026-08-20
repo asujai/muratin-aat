@@ -1,0 +1,28 @@
+# İşlem Geçmişi - Murat İnşaat
+
+## [2026-08-20 15:02] - Netlify Yapılandırması ve Müşteri Sunumunu Güçlendiren Özelliklerin Eklenmesi
+
+* **Model:** Antigravity
+* **Etkilenen Dosyalar:** `[YENİ]` `public/_redirects`, `netlify.toml`, `src/components/home/BeforeAfterSlider.tsx`, `src/components/home/CostEstimator.tsx`, `src/components/home/LiveActivityToast.tsx`, `src/components/home/DemoFeedbackBar.tsx`, `src/components/layout/MobileBottomNav.tsx`, `[GÜNCELLENDİ]` `src/App.tsx`, `SON_DURUM.md`
+* **Yapılan İşlem:** Netlify yayınlama hazırlıkları tamamlandı. Müşteri sunumunu etkileyici kılmak ve geri bildirim sürecini hızlandırmak için 5 yeni etkileşimli modül (Önce/Sonra görsel kaydırıcı, Canlı Maliyet Hesaplayıcı, Canlı Aktivite Toast Bildirimleri, Müşteri Demo Revizyon Çubuğu ve Mobil Alt Navigasyon) geliştirilip projeye entegre edildi.
+* **Doğrulama:** `npm run build` komutu 0 hata ile çalıştı, 1.86 saniyede `dist/` üretildi.
+* **Bilinen Sorunlar:** Yok
+* **Sonraki Öneri:** Netlify üzerinden sitenin canlıya alınması.
+
+## [2026-08-20 14:56] - Modern Frontend Demo Platformunun Geliştirilmesi
+
+* **Model:** Antigravity
+* **Etkilenen Dosyalar:** `[YENİ]` `package.json`, `tsconfig.json`, `vite.config.ts`, `tailwind.config.js`, `postcss.config.js`, `index.html`, `src/main.tsx`, `src/App.tsx`, `src/index.css`, `src/types/service.ts`, `src/data/categories.ts`, `src/data/locations.ts`, `src/data/faqs.ts`, `src/data/smartSuggestions.ts`, `src/components/common/CategoryIcon.tsx`, `src/components/layout/Navbar.tsx`, `src/components/layout/Footer.tsx`, `src/components/home/HeroSection.tsx`, `src/components/home/SmartAssistant.tsx`, `src/components/home/PopularServices.tsx`, `src/components/home/AllCategoriesModal.tsx`, `src/components/home/HowItWorks.tsx`, `src/components/home/TrustSection.tsx`, `src/components/home/FaqSection.tsx`, `src/components/home/ContactSection.tsx`, `src/components/wizard/RequestWizardModal.tsx`, `src/components/wizard/StepSubService.tsx`, `src/components/wizard/StepProblem.tsx`, `src/components/wizard/StepPropertyType.tsx`, `src/components/wizard/StepLocation.tsx`, `src/components/wizard/StepDetails.tsx`, `src/components/wizard/StepTiming.tsx`, `src/components/wizard/StepSummary.tsx`, `src/components/wizard/StepSuccess.tsx`, `[GÜNCELLENDİ]` `SON_DURUM.md`
+* **Yapılan İşlem:** Armut + Getir konseptinde ferah, açık renkli, 16 ana hizmet kategorisi ve 70+ alt hizmeti barındıran; 7 adımlı tam donanımlı talep oluşturma sihirbazı, doğal dil akıllı sorun asistanı, canlı arama, SSS akordeonu ve responsive UI bileşenleri React + TypeScript + Tailwind CSS ile eksiksiz olarak geliştirildi.
+* **Doğrulama:** `npm run build` komutu ile TypeScript kontrolü ve bundle derlemesi 0 hata ile doğrulandı. Dev server çalıştırıldı.
+* **Bilinen Sorunlar:** Yok
+* **Sonraki Öneri:** İhtiyaç halinde Claude ile backend & veritabanı (Supabase/PostgreSQL vb.) entegrasyonu.
+
+## [2026-08-20 14:51] - Proje Başlatma ve Mimari Tasarım Planı
+
+* **Model:** Antigravity
+* **Etkilenen Dosyalar:** `[YENİ]` `AGENTS.md`, `SON_DURUM.md`, `ISLEM_GECMISI.md`
+* **Yapılan İşlem:** Kullanıcının detaylı ürün gereksinimleri (16 ana hizmet kategorisi, 7 adımlı talep oluşturma sihirbazı, akıllı sorun eşleştirici, Armut/Getir stili modern UI) analiz edildi. `implementation_plan.md` planı oluşturuldu ve proje hafıza dosyaları hazırlandı.
+* **Doğrulama:** Dosya yapısı ve mimari gereksinimler kontrol edildi.
+* **Bilinen Sorunlar:** Yok
+* **Sonraki Öneri:** Uygulama planının onaylanması ve frontend uygulamasının kodlanması (Antigravity).
